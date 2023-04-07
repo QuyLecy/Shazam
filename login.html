@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style-login.css">
+    <link rel="icon" href="/icon/icon_path.png" type="image/icon type">
+    <title>My Shazam - Shazam</title>
+</head>
+
+<body>
+    <!--Navigation-->
+    <div class="navigation">
+        <div class="container-flex">
+            <nav>
+                <div class="shazam-icon">
+                    <a href="/index.html">
+                        <img src="/icon/Temp.png" id="shazamic" />
+                    </a>
+                </div>
+                <div class="nav-menu">
+                    <ul>
+                        <li><a href="/login.html">MY LIBRARY</a></li>
+                        <li><a href="/apps.html">APPS</a></li>
+                        <li><a href="https://www.shazam.com/charts/top-200/vietnam">CHARTS</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="search-box">
+                <input class="search-input" type="search" placeholder="Search for music" />
+                <button class="search-btn" type="submit">
+                    <img src="/icon/magnifying.png" alt="" />
+                </button>
+            </div>
+            <div class="action">
+                <button class="download-app">DOWNLOAD APP</button>
+                <button class="connect-app">
+                    CONNECT
+                    <img src="/icon/Apple_Music_2.png" alt="Apple_Music" />
+                </button>
+                <button class="hamburger-menu" id="icon" onclick="myFunction()">
+                    <img src="/icon/hamburger.png" alt="" />
+                </button>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="nav-menu-overlay">
+
+        <div class="shazam-icon">
+            <a href="">
+                <img src="/icon/Shazam_white_logo.png" alt="shazam-icon" />
+            </a>
+        </div>
+        <ul>
+            <li><a href="/index.html">Download Shazam</a></li>
+            <li><a href="/apps.html">Apps</a></li>
+            <li><a href="https://www.shazam.com/charts/top-200/vietnam">Chart</a></li>
+            <li><a href="/login.html">My Library</a></li>
+            <li><a href="https://support.apple.com/en-us/HT210331">Help</a></li>
+        </ul>
+        <button class="hamburger-menu" id="icon" onclick="myFunction()">
+            <img src="/icon/close.png" alt="" />
+        </button>
+    </div>
+    <img src="img/night-mode.png" id="dark">
+
+    <!-------------------->
+    <div class="bg"></div>
+    <div class="frame1">
+        <div class="login-frame">
+            <h1>All your Shazams saved in one place</h1>
+            <h2>Sign in using your Shazam app account </h2>
+            <a href="" class="signin-apple">
+                <img src="/icon/apple.png" alt=""> Sign in with Apple </a>
+            <a href="" class="signin-google">
+                <img src="/icon/google.png" alt=""> Sign in with Google </a>
+            <div class="or">Or sign in with Email</div>
+            <form action="" class="email-form">
+                <input type="email" id="email-name" placeholder="Email Address" value>
+                <button onclick="login()" class="next" type="submit" id="butt"><img src="/img/submit.PNG"></button>
+            </form>
+            <a href="https://www.shazam.com/apps" class="no-account">
+                <div>Don’t have an account?</div>
+                <div class="signup">Sign up using the Shazam app</div>
+            </a>
+            <a href="https://www.shazam.com/privacy/summary" class="privacy">
+                <img src="/icon/Privacy.png" alt="">
+                <div class="about">Learn more about</div>
+                &nbsp;Shazam & Privacy
+            </a>
+
+        </div>
+    </div>
+
+
+    <!--Credit-->
+
+
+    <div class="footer">
+        <div class="wrapper">
+            <div class="footer-content-1">
+                <div class="sz-logo">
+                    <a href="https://www.shazam.com/" class="logo">
+                        <img src="/icon/Shazam_white_logo.png">
+                    </a>
+                </div>
+
+                <div class="select">
+                    <select>  
+                    <option value="cs-CZ">Čeština</option>  
+                    <option value="de-DE">Deutsch</option>  
+                    <option value="el-GR">Eλληνικά</option>  
+                    <option value="en-US" selected="selected">English</option>  
+                    <option value="en-GB">English (UK)</option>  
+                    <option value="es">Español</option>  
+                    <option value="es-ES">Español (ES)</option>  
+                    <option value="es-MX">Español (MX)</option>  
+                    <option value="fr-FR">Français</option>  
+                    <option value="hi-IN">हिन्दी</option>  
+                    <option value="id-ID">Bahasa Indonesia</option>  
+                    <option value="it-IT">Italiano</option>  
+                    <option value="ja-JP">日本語</option>  
+                    <option value="ko-KR">한국어</option>  
+                    <option value="nl-NL">Nederlands</option>  
+                    <option value="pl-PL">Polski</option>  
+                    <option value="pt-PT">Português</option>  
+                    <option value="pt-BR">Português (BR)</option>  
+                    <option value="ru-RU">Русский язык</option>  
+                    <option value="tr-TR">Türkçe</option>  
+                    <option value="zh-CN">中文</option>  
+                    <option value="zh-TW">繁體中文</option>  
+                 </select>
+                </div>
+            </div>
+            <div class="footer-content-2">
+                <div class="company">
+                    <h3 id=c ompany>Company</h3>
+                    <ul>
+                        <li><a href="https://www.shazam.com/company" class="link" target="_blank">About Us</a></li>
+                        <li><a href="https://jobs.apple.com/en-us/search?sort=relevance&amp;search=shazam" class="link" target="_blank">Careers</a></li>
+                        <li><a href="https://support.apple.com/guide/shazam-iphone/welcome/ios" class="link" target="_blank">Help for Apple Devices</a></li>
+                        <li><a href="https://support.apple.com/en-us/HT211913" class="link" target="_blank">Help for Android Devices</a></li>
+                        <li><a href="https://www.shazam.com/shazamkit/" " class="link " target="_blank ">ShazamKit for Developers</a></li>  
+                    <li><a href="https://www.shazam.com//applemusic " class="link " target="_blank ">Apple Music Offer</a></li>  
+                 </ul>
+              </div>
+
+              <div class="legal ">
+                 <h3 id = "legal ">Legal</h3>
+                 <ul>
+                    <li><a href="https://www.shazam.com/terms " class="link " target="_blank ">Terms</a></li>
+                    <li><a href="https://www.apple.com/legal/privacy/en-ww " class="link " target="_blank ">Privacy</a></li>
+                    <li><a href="https://www.shazam.com/privacy " class="link "" target="_blank">Manage Your Data</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-content-3">
+                <div class="app-store-options">
+                    <a href="https://play.google.com/store/apps/details?id=com.shazam.android"><img src="/img/get_on_ggp.png"></a>
+                    <a href="https://itunes.apple.com/app/shazam/id284993459?mt=8&amp;at=11l3eE&amp;ct=5348615A-616D-3235-3830-44754D6D5973"><img src="/img/get_on_as.png" class="as"></a>
+                    <a href="https://chrome.google.com/webstore/detail/shazam/mmioliijnhnoblpgimnlajmefafdfilb"><img src="/img/get_on_cws.png" class="cvs"></a>
+                    <a href="https://galaxystore.samsung.com/detail/com.shazam.android?session_id=W_5b8cae96f944187834b0716caa1ca6c5"><img src="/img/get_on_gs.png" class="gs"></a>
+                </div>
+            </div>
+            <div class="footer-content-4">
+                <div class="media">
+                    <h3 id="fl">Follow Us</h3>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/Shazam" class="follow-fb" target="_blank"><img src="/img/fb2.png"></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/shazam" class="follow-tw" target="_blank"><img src="/img/tw.png"></a>
+                        </li>
+                        <li>
+                            <a href="https://instagram.com/shazam/" class="follow-insta" target="_blank"><img src="/img/ins.png"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.snapchat.com/add/shazam" class="follow-sc" target="_blank"><img src="/img/sn.png"></a>
+                        </li>
+                    </ul>
+                    <div class="copyright"> © Copyright 2023 Apple Inc. and its affiliates &nbsp;|&nbsp;<a href="https://www.apple.com/supplier-responsibility/">Supplier Responsibility</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var dark = document.getElementById("dark");
+        var ctr = 0;
+        dark.onclick = function(){
+           document.body.classList.toggle("dark-mode")
+           if(ctr == 0){
+              ctr = 1;
+              document.getElementById("shazamic").src="icon/Shazam_white_logo.png"
+           }
+           else{
+              ctr = 0;
+              document.getElementById("shazamic").src="icon/Temp.png"
+           }
+           
+        } 
+     </script>
+
+
+</body>
+
+</html>
