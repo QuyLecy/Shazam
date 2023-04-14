@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="stylesheet" href="/style-apps.css" />
-      <link rel="icon" href="/icon/icon_path.png" type="image/icon type">
-      <script src="/main.js"></script>
-      <title>Apps - Shazam</title>
-   </head>
-   <body>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style-apps.css" />
+    <link rel="icon" href="/icon/icon_path.png" type="image/icon type">
+
+    <title>Apps - Shazam</title>
+</head>
+
+<body>
     <!--Navigation-->
-       <div class="navigation">
+    <div class="navigation">
         <div class="container-flex">
             <nav>
                 <div class="shazam-icon">
@@ -30,24 +32,23 @@
             <div class="search-box">
                 <input class="search-input" type="search" placeholder="Search for music" />
                 <button class="search-btn" type="submit">
-                    <img src="/icon/magnifying.png" alt="" />
-                </button>
+                  <img src="/icon/magnifying.png" alt="" />
+              </button>
             </div>
             <div class="action">
                 <button class="download-app">DOWNLOAD APP</button>
                 <button class="connect-app">
-                    CONNECT
-                    <img src="/icon/Apple_Music_2.png" alt="Apple_Music" />
-                </button>
-                <button class="hamburger-menu" id="icon" onclick="myFunction()">
-                    <img src="/icon/hamburger.png" alt="" />
-                </button>
-                
+                  CONNECT
+                  <img src="/icon/Apple_Music_2.png" alt="Apple_Music" />
+              </button>
+                <button class="hamburger-menu" id="open">
+                  <img src="/icon/hamburger.png" alt="" />
+              </button>
+
             </div>
         </div>
-
     </div>
-    <div class="nav-menu-overlay">
+    <div id="hint" class="hide">
 
         <div class="shazam-icon">
             <a href="">
@@ -61,161 +62,124 @@
             <li><a href="/login.html">My Library</a></li>
             <li><a href="https://support.apple.com/en-us/HT210331">Help</a></li>
         </ul>
-        <button class="hamburger-menu" id="icon" onclick="myFunction()">
-            <img src="/icon/close.png" alt="" />
-        </button>
+        <button class="hamburger-menu" id="close">
+          <img src="/icon/close.png" alt="" />
+      </button>
     </div>
     <img src="img/night-mode.png" id="dark">
-      <!-------------------->
-      
-      <!--Frame 1-->
-         <div class="Apps">
-            <div class="frame1">
-               <div class="phones">
-                  <div class="phone">
-                     <img src="img/phones.png" alt="">
-                  </div>
-               </div>
+    <!-------------------->
 
-               <div class="text-container">
-                  <div class="title">Identify, listen and discover songs with the Shazam apps</div>
-                  <div class="subtitle">Listen and add songs you discover to your Apple Music or Spotify playlists. Sing along with time-synced lyrics. Watch your favorite music videos with Apple Music or YouTube.</div>
-               </div>
-
-               <div class="QR">
-                  <div class="qrimg">
-                     <img src="img/qr-apps.png" alt="">
-                  </div>
-
-                  <div class="textbox">
-                     <div class="title">Download the free App</div>
-                     <div class="subtitle">Scan the code with your smart phone camera to download the free app</div>
-                     <div class="avail">AVAILABLE ON</div>
-                     <div class="links">
-                        <a href="https://apps.apple.com/app/shazam/id284993459?app=music&ign-itscg=30201&ign-itsct=Shazam_web&mttn3pid=a_custom_779816081798873874&mttnagencyid=769459046716559743&mttnsiteid=125115&mttnsub1=Shazam_web&mttnsub2=468b42f6-f57c-8fc0-ea45-a886048dcc4e" class="ioslink">
-                           iOS
-            
-                        </a>
-                        <span>|</span>
-                        <a href="https://apps.apple.com/app/shazam/id284993459?app=music&ign-itscg=30201&ign-itsct=Shazam_web&mttn3pid=a_custom_779816081798873874&mttnagencyid=769459046716559743&mttnsiteid=125115&mttnsub1=Shazam_web&mttnsub2=468b42f6-f57c-8fc0-ea45-a886048dcc4e" class="androidlink">
-                           Android
-            
-                        </a>
-                     </div>
-                  </div>
-               </div>
-               <div class="more">More ways to identify and discover music</div>
+    <!--Frame 1-->
+    <div class="Apps">
+        <div class="frame1">
+            <div class="text-container">
+                <div class="title">Identify, listen and discover songs with the Shazam apps</div>
+                <div class="subtitle">Listen and add songs you discover to your Apple Music or Spotify playlists. Sing along with time-synced lyrics. Watch your favorite music videos with Apple Music or YouTube.</div>
             </div>
 
-            <section class="cards">
-               <div class="ioscc">
-                  <div class="icon">
-                     <div class="ic">
-                        <img src="img/ccicon.png" sizes="100vw">
-                     </div>
-                  </div>
-                  <div class="title">Shazam on iOS Control Center</div>
-                  <div class="subtitle">Identify songs directly from Control Center on your iPhone or on your iPad.</div>
-                  <a href="https://support.apple.com/HT210331" class="learn">Learn more</a>
-                  <div class="device-img-container">
-                     <div class="imgsrc">
-                        <img src="img/control-center.png" sizes="100vw">
-                     </div>
-                  </div>
-               </div>
+            <div class="package">
+                <div class="container">
+                    <div class="logo">
+                        <img src="img/ccicon.png">
+                    </div>
+                    <div class="title">
+                        <a href="https://support.apple.com/HT210331">Shazam on iOS Control Center</a>
+                    </div>
 
-               <div class="android">
-                  <div class="icon">
-                     <div class="ic">
-                        <img src="/img/group-9.png" sizes="100vw">
-                     </div>
-                  </div>
-                  <div class="title">Pop Up Shazam on Android</div>
-                  <div class="subtitle">Bring Shazam to your favorite Android apps with Pop Up Shazam</div>
-                  <a href="https://support.apple.com/HT211913" class="learn">Learn more</a>
-                  <div class="device-img-container">
-                     <div class="imgsrc">
-                        <img src="img/popup-android.png" sizes="100vw">
-                     </div>
-                  </div>
-               </div>
+                    <div class="imgsrc">
+                        <img src="img/control-center.png">
+                    </div>
 
-               <div class="noti">
-                  <div class="icon">
-                     <div class="ic">
-                        <img src="img/group-9-a.png" sizes="100vw">
-                     </div>
-                  </div>
-                  <div class="title">Shazam on Android Notification</div>
-                  <div class="subtitle">Use Android Notification to identify music with a swipe and tap.</div>
-                  <a href="https://support.apple.com/HT211913" class="learn">Learn more</a>
-                  <div class="device-img-container">
-                     <div class="imgsrc">
-                        <img src="img/notification.png" sizes="100vw">
-                     </div>
-                  </div>
-               </div>
+                </div>
 
-               <div class="snapchat">
-                  <div class="logo">
-                     <div class="lg">
+                <div class="container">
+                    <div class="logo">
+                        <img src="img/group-9.png">
+                    </div>
+                    <div class="title">
+                        <a href="https://support.apple.com/HT211913">Pop Up Shazam on Android</a>
+                    </div>
+
+                    <div class="imgsrc">
+                        <img src="img/popup-android.png">
+                    </div>
+
+                </div>
+
+                <div class="container">
+                    <div class="logo">
+                        <img src="img/group-9-a.png">
+                    </div>
+                    <div class="title">
+                        <a href="https://support.apple.com/HT211913">Shazam on Android Notification</a>
+                    </div>
+
+                    <div class="imgsrc">
+                        <img src="img/notification.png">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="frame2">
+            <div class="dlsection">
+                <div class="avail">Shazam is now available on:</div>
+                <div class="dlbox">
+                    <a href="https://apps.apple.com/app/shazam/id284993459" class="ioslink">
+                        <img src="https://www-growth.scdn.co/static/badges/svgs/apple/badge-en.svg">
+                    </a>
+
+                    <a href="https://play.google.com/store/apps/details?id=com.shazam.android" class="androidlink">
+                        <img src="https://www-growth.scdn.co/static/badges/svgs/google/badge-en.svg">
+                    </a>
+
+                    <a href="https://chrome.google.com/webstore/detail/shazam/mmioliijnhnoblpgimnlajmefafdfilb" class="chrome">
+                        <img src="img/get_on_cws.png">
+                    </a>
+                </div>
+            </div>
+
+            <div class="other">
+                <div class="snapchat">
+                    <div class="logo">
                         <img src="img/snapchat-logo.png" sizes="100vw">
-                     </div>
-                  </div>
-                  <div class="title">Shazam on Snapchat</div>
-                  <div class="subtitle">Identify songs playing around you while on Snapchat</div>
-                  <a href="https://support.apple.com/HT210237" class="learn">Learn more</a>
-               </div>
+                    </div>
+                    <a href="https://support.apple.com/HT210237" class="title">Shazam on Snapchat</a>
+                    <div class="subtitle">Identify songs playing around you while on Snapchat</div>
+                </div>
 
-               <div class="watch">
-                  <div class="imgsrc">
-                     <img src="img/watches.png" sizes="100vw">
-                  </div>
+                <div class="watch">
+                    <div class="imgsrc">
+                        <img src="img/watches.png" sizes="100vw">
+                    </div>
 
-                  <div class="textbox">
-                     <div class="title">Shazam from your wrist</div>
-                     <div class="subtitle">Shazam is available for both Apple Watch and Android Wear</div>
-                  </div>
-               </div>
-
-               <div class="extension">
-                  <div class="text-container">
-                     <div class="title">Shazam Browser Extension</div>
-                     <div class="subtitle">Identify songs in seconds from your web browser</div>
-                     <div class="avail">Available on:</div>
-                     <div class="Chrome-btn">
-                        <a href="https://chrome.google.com/webstore/detail/shazam/mmioliijnhnoblpgimnlajmefafdfilb" class="chromelink">
-                           <div class="imgsrc">
-                              <img src="icon/chrome-logo.png" sizes="100vw">
-                           </div>
-                           Google Chrome
-                        </a>
-                     </div>
-                  </div>
-
-                  <div class="img-container">
-                     <div class="imgsrc">
-                        <img src="img/broswer.png" sizes="100vw">
-                     </div>
-                  </div>
-               </div>
-            </section>
-         </div>
-
-      <!--Credit-->
+                    <div class="textbox">
+                        <div class="title">Shazam from your wrist</div>
+                        <div class="subtitle">Shazam is available for both Apple Watch and Android Wear</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-      <div class="footer">
-         <div class="wrapper">
+
+    <!--Credit-->
+
+
+    <div class="footer">
+        <div class="wrapper">
             <div class="footer-content-1">
-               <div class = "sz-logo">
-                  <a href="https://www.shazam.com/" class="logo">
-                     <img src="/icon/Shazam_white_logo.png">
-                  </a>  
-               </div>
+                <div class="sz-logo">
+                    <a href="https://www.shazam.com/" class="logo">
+                        <img src="/icon/Shazam_white_logo.png">
+                    </a>
+                </div>
 
-               <div class="select">
-                  <select>  
+                <div class="select">
+                    <select>  
                      <option value="cs-CZ">Čeština</option>  
                      <option value="de-DE">Deutsch</option>  
                      <option value="el-GR">Eλληνικά</option>  
@@ -238,74 +202,65 @@
                      <option value="tr-TR">Türkçe</option>  
                      <option value="zh-CN">中文</option>  
                      <option value="zh-TW">繁體中文</option>  
-                  </select> 
-               </div>
+                  </select>
+                </div>
             </div>
-            <div class="footer-content-2">   
-               <div class="company">
-                  <h3 id = company>Company</h3>
-                  <ul>
-                     <li><a href="https://www.shazam.com/company" class="link" target="_blank">About Us</a></li>
-                     <li><a href="https://jobs.apple.com/en-us/search?sort=relevance&amp;search=shazam" class="link" target="_blank">Careers</a></li>
-                     <li><a href="https://support.apple.com/guide/shazam-iphone/welcome/ios" class="link" target="_blank">Help for Apple Devices</a></li>
-                     <li><a href="https://support.apple.com/en-us/HT211913" class="link" target="_blank">Help for Android Devices</a></li>
-                     <li><a href="https://www.shazam.com/shazamkit/"" class="link" target="_blank">ShazamKit for Developers</a></li>  
-                     <li><a href="https://www.shazam.com//applemusic" class="link" target="_blank">Apple Music Offer</a></li>  
+            <div class="footer-content-2">
+                <div class="company">
+                    <h3 id=c ompany>Company</h3>
+                    <ul>
+                        <li><a href="https://www.shazam.com/company" class="link" target="_blank">About Us</a></li>
+                        <li><a href="https://jobs.apple.com/en-us/search?sort=relevance&amp;search=shazam" class="link" target="_blank">Careers</a></li>
+                        <li><a href="https://support.apple.com/guide/shazam-iphone/welcome/ios" class="link" target="_blank">Help for Apple Devices</a></li>
+                        <li><a href="https://support.apple.com/en-us/HT211913" class="link" target="_blank">Help for Android Devices</a></li>
+                        <li><a href="https://www.shazam.com/shazamkit/" " class="link " target="_blank ">ShazamKit for Developers</a></li>  
+                     <li><a href="https://www.shazam.com//applemusic " class="link " target="_blank ">Apple Music Offer</a></li>  
                   </ul>
                </div>
 
-               <div class="legal">
-                  <h3 id = "legal">Legal</h3>
+               <div class="legal ">
+                  <h3 id = "legal ">Legal</h3>
                   <ul>
-                     <li><a href="https://www.shazam.com/terms" class="link" target="_blank">Terms</a></li>
-                     <li><a href="https://www.apple.com/legal/privacy/en-ww" class="link" target="_blank">Privacy</a></li>
-                     <li><a href="https://www.shazam.com/privacy" class="link"" target="_blank">Manage Your Data</a></li>
-                  </ul>
-               </div>
+                     <li><a href="https://www.shazam.com/terms " class="link " target="_blank ">Terms</a></li>
+                     <li><a href="https://www.apple.com/legal/privacy/en-ww " class="link " target="_blank ">Privacy</a></li>
+                     <li><a href="https://www.shazam.com/privacy " class="link "" target="_blank">Manage Your Data</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="footer-content-3">
-               <div class="app-store-options">
-                  <a href="https://play.google.com/store/apps/details?id=com.shazam.android"><img src="/img/get_on_ggp.png"></a> 
-                  <a href="https://itunes.apple.com/app/shazam/id284993459?mt=8&amp;at=11l3eE&amp;ct=5348615A-616D-3235-3830-44754D6D5973"><img src="/img/get_on_as.png" class = "as"></a> 
-                  <a href="https://chrome.google.com/webstore/detail/shazam/mmioliijnhnoblpgimnlajmefafdfilb"><img src="/img/get_on_cws.png" class="cvs"></a> 
-                  <a href="https://galaxystore.samsung.com/detail/com.shazam.android?session_id=W_5b8cae96f944187834b0716caa1ca6c5"><img src="/img/get_on_gs.png" class="gs"></a> 
-               </div>
-            </div> 
-            <div class="footer-content-4">  
-               <div class="media">
-                  <h3 id="fl">Follow Us</h3>
-                  <ul>
-                     <li><a href="https://www.facebook.com/Shazam" class="follow-fb" target="_blank"><img src="/img/fb2.png"></a></li>
-                     <li><a href="https://twitter.com/shazam" class="follow-tw" target="_blank"><img src="/img/tw.png"></a></li>
-                     <li><a href="https://instagram.com/shazam/" class="follow-insta" target="_blank"><img src="/img/ins.png"></a></li>
-                     <li><a href="https://www.snapchat.com/add/shazam" class="follow-sc" target="_blank"><img src="/img/sn.png"></a></li>
-                  </ul>
-                  <div class="copyright"> © Copyright 2023 Apple Inc. and its affiliates &nbsp;|&nbsp;<a href="https://www.apple.com/supplier-responsibility/">Supplier Responsibility</a>
-                  </div>
-               </div>
-            </div>   
-         </div>
-      </div>
+                <div class="app-store-options">
+                    <a href="https://play.google.com/store/apps/details?id=com.shazam.android"><img src="/img/get_on_ggp.png"></a>
+                    <a href="https://itunes.apple.com/app/shazam/id284993459?mt=8&amp;at=11l3eE&amp;ct=5348615A-616D-3235-3830-44754D6D5973"><img src="/img/get_on_as.png" class="as"></a>
+                    <a href="https://chrome.google.com/webstore/detail/shazam/mmioliijnhnoblpgimnlajmefafdfilb"><img src="/img/get_on_cws.png" class="cvs"></a>
+                    <a href="https://galaxystore.samsung.com/detail/com.shazam.android?session_id=W_5b8cae96f944187834b0716caa1ca6c5"><img src="/img/get_on_gs.png" class="gs"></a>
+                </div>
+            </div>
+            <div class="footer-content-4">
+                <div class="media">
+                    <h3 id="fl">Follow Us</h3>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/Shazam" class="follow-fb" target="_blank"><img src="/img/fb2.png"></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/shazam" class="follow-tw" target="_blank"><img src="/img/tw.png"></a>
+                        </li>
+                        <li>
+                            <a href="https://instagram.com/shazam/" class="follow-insta" target="_blank"><img src="/img/ins.png"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.snapchat.com/add/shazam" class="follow-sc" target="_blank"><img src="/img/sn.png"></a>
+                        </li>
+                    </ul>
+                    <div class="copyright"> © Copyright 2023 Apple Inc. and its affiliates &nbsp;|&nbsp;<a href="https://www.apple.com/supplier-responsibility/">Supplier Responsibility</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/main.js"></script>
 
-         
+</body>
 
-      <script>
-         var dark = document.getElementById("dark");
-         var ctr = 0;
-         dark.onclick = function(){
-            document.body.classList.toggle("dark-mode")
-            if(ctr == 0){
-               ctr = 1;
-               document.getElementById("shazamic").src="icon/Shazam_white_logo.png"
-            }
-            else{
-               ctr = 0;
-               document.getElementById("shazamic").src="icon/Temp.png"
-            }
-            
-         }
-         
-      </script>
-
-   </body>
 </html>
